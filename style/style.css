@@ -1,0 +1,246 @@
+body {
+    font-family: 'Fjalla One', sans-serif;
+    background-image: url(/assets/sfondo.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#barra {
+    background-color: rgb(241, 192, 29);
+
+}
+
+.neon {
+    position: relative;
+    color: #8121e7;
+    font-size: 1.7em;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-shadow: 0 0 20px #f000ff;
+}
+
+.neon::after {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: rgb(120, 77, 238);
+    filter: blur(15px);
+    z-index: -1;
+}
+
+.neon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f000ff;
+    opacity: .5;
+    filter: blur(40px);
+    z-index: -2;
+}
+
+
+.nav-link {
+
+    margin: 0.6em;
+
+
+}
+
+
+.navbar-toggler {
+
+    border: 2px solid rgb(90, 30, 255);
+}
+
+
+
+#logo {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-right: 0.5em;
+}
+
+
+.nav-item {
+    text-align: center;
+}
+
+
+#product-form {
+    margin-top: 2rem;
+}
+
+.red-required {
+    color: rgb(255, 106, 0);
+}
+
+
+#tabella {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.corpo {
+    margin-top: 0.5em;
+    background-color: rgba(255, 255, 255, 0.849);
+    color: black;
+    border-radius: 5px;
+    border: #DC3444 solid 3px;
+
+}
+
+.corpo p {
+    font-size: 2em;
+}
+
+.card {
+    margin: 1rem;
+    width: 24rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+}
+
+
+
+.card-img-top {
+    height: 30rem;
+    object-fit: cover;
+    padding: 0.2em;
+}
+
+.btn {
+    margin-bottom: 1rem;
+}
+
+th,
+td {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+th img {
+    height: 200px;
+}
+
+.imgspogliatoio {
+    width: 200px;
+    border-radius: 2%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.description-title {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid red;
+}
+
+.price-text {
+    font-size: 1.8rem;
+    color: rgb(238, 94, 10);
+    font-weight: 600;
+}
+
+.card-body {
+    font-size: 1.2em;
+}
+
+
+
+.container {
+    color: white;
+}
+
+small {
+    color: white;
+}
+
+
+
+
+.row .col-md-4 {
+    position: relative;
+}
+
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    width: 900px;
+}
+
+
+.row .col-md-4 {
+
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+    transform-origin: center top;
+    transform-style: preserve-3d;
+    transform: translateZ(0);
+    transition: 0.3s;
+}
+
+.row .col-md-4 img {
+    height: 400px;
+
+    border-radius: 2%;
+}
+
+
+.row .col-md-4:after {
+    content: '';
+    z-index: 10;
+    width: 200%;
+    height: 100%;
+    top: -90%;
+    left: -20px;
+    opacity: 0.1;
+    transform: rotate(45deg);
+    background: linear-gradient(to top, transparent, #fff 15%, rgba(255, 255, 255, 0.5));
+    transition: 0.3s;
+    position: absolute;
+}
+
+.row .col-md-4:hover,
+
+.row .col-md-4:focus,
+
+.row .col-md-4:active {
+    box-shadow: 0 8px 16px 3px rgba(0, 0, 0, 0.6);
+    transform: translateY(-3px) scale(1.05) rotateX(15deg);
+}
+
+.row .col-md-4:hover:after,
+
+.row .col-md-4:focus:after,
+
+.row .col-md-4:active:after {
+    transform: rotate(25deg);
+    top: -40%;
+    opacity: 0.15;
+}
+
+#pick:hover {
+    transition-duration: 150ms;
+    box-shadow: rgba(222, 212, 157, 0.946) 0px 54px 55px, rgba(242, 149, 68, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgb(245, 157, 102) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#pick img {
+
+    opacity: 0.3;
+}
+
+#pick img:hover {
+
+    opacity: 5;
+}
